@@ -119,10 +119,10 @@ docker build -t easy-apply .
 docker run --rm -p 8765:8765 easy-apply
 ```
 
-For full automation dependencies in image:
+To build a lighter image without Playwright automation dependencies:
 
 ```bash
-docker build --build-arg INSTALL_FULL=1 -t easy-apply:full .
+docker build --build-arg INSTALL_FULL=0 -t easy-apply:lite .
 ```
 
 ## Important limits
